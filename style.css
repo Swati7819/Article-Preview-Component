@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.visible {
+    display: block;
+
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: rgb(237, 242, 248);
+    color: black;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container {
+    max-width: 650px;
+    background-color: white;
+    margin: 200px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container img {
+    max-width: 40%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.container .text-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.container .text-container p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.person-introduction {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.person-introduction img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.footer .person-introduction .name {
+    line-height: 1.5;
+}
+
+
+
+.footer .share {
+    background-color: rgb(237, 241, 250);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.footer .share svg {
+    width: 15px;
+    align-self: center;
+}
+
+.footer .share:hover {
+    cursor: pointer;
+    background-color: rgb(73, 85, 107);
+}
+
+.footer .share svg path {
+    fill: #6E8098;
+    transition: fill 0.3s ease;
+}
+
+.footer .share:hover svg path {
+    fill: white;
+}
+
+.share-component {
+    position: absolute;
+    width: 250px;
+    background-color: rgb(73, 85, 107);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10px;
+    left: -110px;
+    top: -70px;
+    letter-spacing: 3px;
+
+}
+
+
+.share-component a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-component a img {
+    height: 20px;
+    width: 40px;
+    border-radius: 0px;
+}
+
+.share-component:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: rgb(73, 85, 107) transparent transparent transparent;
+}
+
+/*mobile design for footer*/
+
+.mobile-footer {
+    max-width: 650px;
+    background-color: rgb(73, 85, 107);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    letter-spacing: 3px;
+    margin: auto;
+
+}
+
+.mobile-footer .part-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.mobile-footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-footer a img {
+    height: 30px;
+    width: 40px;
+    border-radius: 0px;
+}
+
+.mobile-footer .share {
+    background-color: rgb(237, 241, 250);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+@media screen and (max-width:668px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .img-1 {
+        max-width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+}
